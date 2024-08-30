@@ -1,9 +1,19 @@
+@import url("styles/header.css");
+
 :root{
     --cor-de-fundo:#EBECEE;
+    --branco: #FFFFFF;
 }
 
 body{
     background-color: var(--cor-de-fundo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    display: flex;
+    align-items: center;
 }
 
 
