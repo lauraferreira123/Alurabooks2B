@@ -55,9 +55,8 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel-titulo">Novos lançamentos</h2>
-        <!-- Slider main container -->
         <div class="swiper">
-            <!-- Additional required wrapper -->
+            <div class="swiper-pagination"></div>
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide"><img src="img/ApacheKafka.png" alt="Livro sobre Apache Kafta da AluraBooks"></div>
@@ -70,25 +69,32 @@
                 <div class="swiper-slide"><img src="img/Favoritos.png" alt="Livro sobre Favoritos da AluraBooks"></div>
                 <div class="swiper-slide"><img src="img/Gestão.png" alt="Livro sobre Gestão da AluraBooks"></div>
                 <div class="swiper-slide"><img src="img/Gestão2.png" alt="Livro sobre Gestão2 da AluraBooks"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.png" alt="Livro sobre Guia font da AluraBooks"></div>
+
                 ...
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+         
 
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
 
             <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
 
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
         const swiper = new Swiper('.swiper', {
-        speed: 400,
-        spaceBetween: 100,
+        spaceBetween: 10,
+        slidePerView: 3, 
+        pagination: {
+            el:'.swiper-pagination',
+            type; 'bullets',
+
+        },
 });
     </script>
 </body>
